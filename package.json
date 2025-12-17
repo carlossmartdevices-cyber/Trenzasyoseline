@@ -1,0 +1,19 @@
+{
+  "name": "trenzasyoseline",
+  "version": "1.0.0",
+  "description": "Telegram bot for hair braiding services",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "seed": "node generator.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["telegram", "bot", "hair", "braiding"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^6.35.0",
+    "sqlite3": "^5.1.6",
+    "node-telegram-bot-api": "^0.64.0"
+  }
+}
