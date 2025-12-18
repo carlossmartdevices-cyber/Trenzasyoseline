@@ -15,6 +15,14 @@ module.exports = (sequelize) => {
         key: 'id',
       },
     },
+    serviceId: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'services',
+        key: 'id',
+      },
+    },
     details: {
       type: DataTypes.TEXT,
       allowNull: false,

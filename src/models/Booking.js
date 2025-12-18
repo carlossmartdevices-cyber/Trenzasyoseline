@@ -17,9 +17,17 @@ module.exports = (sequelize) => {
     },
     cotizationId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       references: {
         model: 'cotizations',
+        key: 'id',
+      },
+    },
+    serviceId: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'services',
         key: 'id',
       },
     },

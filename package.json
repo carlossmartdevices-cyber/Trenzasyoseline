@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "node index.js",
     "seed": "node generator.js",
+    "reset-db": "rm -f database.sqlite && node generator.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["telegram", "bot", "hair", "braiding"],
@@ -14,6 +16,9 @@
   "dependencies": {
     "sequelize": "^6.35.0",
     "sqlite3": "^5.1.6",
-    "node-telegram-bot-api": "^0.64.0"
+    "node-telegram-bot-api": "^0.64.0",
+    "dotenv": "^16.3.1",
+    "moment-timezone": "^0.5.43",
+    "winston": "^3.11.0"
   }
 }
